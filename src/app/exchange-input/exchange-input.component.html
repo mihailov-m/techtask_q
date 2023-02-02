@@ -1,0 +1,18 @@
+<input
+    class="amount"
+    type="number"
+    [ngModel]="amountInput"
+    (ngModelChange)="onAmountChange($event)"
+>
+
+<select
+    class="currency"
+    [ngModel]="rateInput"
+    (ngModelChange)="onRateChange($event)">
+    <option
+        *ngFor="let item of rates"
+        [value]="item.rate"
+        >
+            {{item.currency}}
+    </option>
+</select>

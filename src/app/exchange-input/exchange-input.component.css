@@ -1,0 +1,18 @@
+.amount, .currency {
+    font-size: larger;
+    padding: 16px;
+}
+
+.amount {
+    width: 148px;
+}
+
+.currency {
+    margin-left: 8px;
+    width: 100px;
+}
+
+:host {
+    display: block;
+    margin-bottom: 24px;
+}
